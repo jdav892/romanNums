@@ -3,7 +3,7 @@ const convert = document.getElementById("convert-btn")
 const output = document.getElementById("output")
 
 const romanConvert = num => {
-  const ref = [
+  const numerals = [
     ['M', 1000],
     ['CM', 900],
     ['D', 500],
