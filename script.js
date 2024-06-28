@@ -32,7 +32,7 @@ const romanConvert = num => {
 const checker = (str, int) => {
   let errorText = '';
   
-  if(!str || str.match(/[e.]/g)){
+  if(!str){
     errorText = "Please enter a valid number.";
   }else if(int < 1) {
     errorText = "Please enter a number greater than or equal to 1.";
@@ -51,8 +51,8 @@ const clear = () => {
   output.classList.remove('alert');
 };
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
+form.addEventListener('submit', save => {
+  save.preventDefault();
   update();
 });
 
